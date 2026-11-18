@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="description" content="Concept website for a fictional Chicago osteria.">
+<title>Osteria Novanta — Concept design by Brightverse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+button,input,textarea{font:inherit}
+.concept-bar{position:relative;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 28px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;flex-wrap:wrap}
+.concept-bar.light{background:#111;color:#f3efe6}
+.concept-bar.dark{background:#f3efe6;color:#111}
+.concept-bar a{text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px}
+.concept-bar a:hover{opacity:.7}
+.cb-note{opacity:.72;letter-spacing:.08em;text-transform:none;font-size:12px}
+@media (max-width:720px){
+  .cb-note{display:none}
+  .concept-bar{padding:10px 16px}
+}
+
+:root{--ink:#f3ead9;--bg:#140e0a;--gold:#c4a574}
+body{font-family:Karla,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 48px;border-bottom:1px solid rgba(196,165,116,.25)}
+.logo{font-family:Italiana,serif;font-size:30px;letter-spacing:.12em;text-transform:uppercase}
+.nav nav{display:flex;gap:24px;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+.nav nav a{text-decoration:none}
+.hero{position:relative;min-height:92vh;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.45) saturate(1.05)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,10,.2),rgba(20,14,10,.82))}
+.hero-inner{position:relative;z-index:2;padding:28vh 48px 80px;text-align:center}
+.kicker{letter-spacing:.22em;text-transform:uppercase;font-size:11px;color:var(--gold)}
+h1{font-family:Italiana,serif;font-size:clamp(52px,9vw,118px);letter-spacing:.06em;line-height:.9;margin:18px 0 16px;text-transform:uppercase}
+.hero-inner p{font-size:20px;font-style:italic;max-width:28ch;margin:0 auto;color:#e6d7bf}
+section{padding:90px 48px}
+.wrap{max-width:820px;margin:0 auto}
+h2{font-family:Italiana,serif;font-size:clamp(32px,5vw,56px);letter-spacing:.06em;text-transform:uppercase;text-align:center}
+.intro{text-align:center;max-width:540px;margin:0 auto 20px;font-size:18px;color:#d9cbb4}
+.menu{margin-top:48px}
+.course{text-align:center;margin:42px 0}
+.course .name{font-family:Italiana,serif;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-size:13px;margin-bottom:18px}
+.dish{padding:12px 0}
+.dish h3{font-family:Italiana,serif;font-size:30px;letter-spacing:.04em}
+.dish p{color:#cbbba3;font-size:15px}
+.photos{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:0}
+.photos img{width:100%;height:360px;object-fit:cover;filter:brightness(.9)}
+.visit{text-align:center}
+.visit p{margin-top:14px;color:#d9cbb4}
+.hours{margin:28px auto 0;max-width:320px;display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;text-align:left;font-size:15px}
+footer{padding:24px 48px 48px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8a7a64;border-top:1px solid rgba(196,165,116,.2)}
+@media (max-width:800px){
+  .nav,section,.hero-inner,footer{padding-left:20px;padding-right:20px}
+  .photos{grid-template-columns:1fr}
+  .nav nav{display:none}
+}
+
+</style>
+</head>
+<body>
+<div class="concept-bar light">
+  <span class="cb-kicker">Concept design</span>
+  <span class="cb-note">A Brightverse study — fictional business, not a live client site</span>
+  <a class="cb-back" href="../">All work</a>
+</div>
+
+<header class="nav">
+  <div class="logo">Novanta</div>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#visit">Reservations</a>
+  </nav>
+</header>
+<section class="hero" style="padding:0">
+  <img src="../assets/img/resto-hero.jpg" alt="A composed plate in low, warm light">
+  <div class="hero-inner">
+    <p class="kicker">Chicago</p>
+    <h1>Osteria Novanta</h1>
+    <p>Ninety seats. One long evening.</p>
+  </div>
+</section>
+<section>
+  <p class="intro">A neighborhood room for dinner: pasta from the board, a fire for the secondi, and a wine list that stays close to the Alps and the islands. Imagined by Brightverse as a concept, not a restaurant you can book tonight.</p>
+</section>
+<section id="menu" style="padding-top:0">
+  <div class="wrap menu">
+    <h2>This evening</h2>
+    <div class="course">
+      <div class="name">Antipasti</div>
+      <div class="dish"><h3>Burrata, late oil, clementine</h3><p>A cool plate to open the table.</p></div>
+      <div class="dish"><h3>Cicoria and anchovy</h3><p>Bitter greens, a warm dressing, bread to finish the bowl.</p></div>
+    </div>
+    <div class="course">
+      <div class="name">Primi</div>
+      <div class="dish"><h3>Tagliatelle al ragù</h3><p>A slow sauce, a wide ribbon, parmigiano at the table.</p></div>
+      <div class="dish"><h3>Risotto al nero</h3><p>Cuttlefish, lemon, and a quietly dark plate.</p></div>
+    </div>
+    <div class="course">
+      <div class="name">Secondi</div>
+      <div class="dish"><h3>Branzino, fennel, capers</h3><p>The whole fish, for the middle of the table.</p></div>
+      <div class="dish"><h3>Duck, cherries, polenta</h3><p>A winter plate that stays on the menu when the cherries are gone, as jam.</p></div>
+    </div>
+  </div>
+</section>
+<div class="photos">
+  <img src="../assets/img/resto-room.jpg" alt="The dining room, low lamps, tables set">
+  <img src="../assets/img/resto-pasta.jpg" alt="An evening table under a covered terrace">
+  <img src="../assets/img/resto-wine.jpg" alt="Glasses raised at the end of a course">
+</div>
+<section class="visit" id="visit">
+  <p class="kicker">Reservations</p>
+  <h2>Dinner from six.</h2>
+  <p>Tuesday through Sunday. A small bar for those who arrive without a plan.</p>
+  <div class="hours">
+    <span>Tuesday – Thursday</span><span>18:00 – 22:00</span>
+    <span>Friday, Saturday</span><span>18:00 – 23:00</span>
+    <span>Sunday</span><span>17:00 – 21:00</span>
+  </div>
+  <p style="margin-top:28px;opacity:.7;font-size:14px">This is a concept design. There is no bookable table behind this page.</p>
+</section>
+<footer>
+  <span>Osteria Novanta · Chicago</span>
+  <span>Concept design by Brightverse · brightverse.ai</span>
+</footer>
+
+</body>
+</html>

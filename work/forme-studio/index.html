@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="description" content="Concept website for a fictional Santa Monica training studio.">
+<title>Forme Studio — Concept design by Brightverse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+button,input,textarea{font:inherit}
+.concept-bar{position:relative;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 28px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;flex-wrap:wrap}
+.concept-bar.light{background:#111;color:#f3efe6}
+.concept-bar.dark{background:#f3efe6;color:#111}
+.concept-bar a{text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px}
+.concept-bar a:hover{opacity:.7}
+.cb-note{opacity:.72;letter-spacing:.08em;text-transform:none;font-size:12px}
+@media (max-width:720px){
+  .cb-note{display:none}
+  .concept-bar{padding:10px 16px}
+}
+
+:root{--bg:#111;--ink:#f3efe6;--ember:#e25c2a}
+body{font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 40px;position:absolute;left:0;right:0;top:42px;z-index:5}
+.logo{font-family:"Bebas Neue",sans-serif;font-size:34px;letter-spacing:.06em}
+.nav a{color:#fff;text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden;display:flex;align-items:flex-end}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.5) contrast(1.1)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,17,17,.2) 0%,rgba(17,17,17,.15) 40%,rgba(17,17,17,.9) 100%)}
+.hero-inner{position:relative;z-index:2;padding:0 40px 70px;width:100%}
+h1{font-family:"Bebas Neue",sans-serif;font-size:clamp(72px,16vw,210px);line-height:.8;letter-spacing:-.02em}
+h1 span{color:var(--ember)}
+.hero-inner p{font-size:18px;max-width:34ch;margin-top:12px}
+section{padding:80px 40px}
+.wrap{max-width:1180px;margin:0 auto}
+h2{font-family:"Bebas Neue",sans-serif;font-size:clamp(42px,6vw,80px);line-height:.9;letter-spacing:.01em}
+.board{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#2a2a2a;margin-top:36px}
+.cls{background:#111;padding:28px 22px;min-height:180px}
+.cls .when{color:var(--ember);font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+.cls h3{font-family:"Bebas Neue",sans-serif;font-size:36px;letter-spacing:.02em}
+.cls p{color:#bdb6ab;margin-top:6px;font-size:14px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:0 40px}
+.pair img{width:100%;height:460px;object-fit:cover;filter:grayscale(.3) contrast(1.05)}
+.cta{padding:120px 40px}
+.cta p{margin-top:14px;color:#bdb6ab;max-width:38ch}
+footer{padding:20px 40px 48px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#7a756c;border-top:1px solid #2a2a2a}
+@media (max-width:800px){
+  .nav,.hero-inner,section,.cta,footer,.pair{padding-left:20px;padding-right:20px}
+  .board,.pair{grid-template-columns:1fr}
+  h1{font-size:72px}
+}
+
+</style>
+</head>
+<body>
+<div class="concept-bar light">
+  <span class="cb-kicker">Concept design</span>
+  <span class="cb-note">A Brightverse study — fictional business, not a live client site</span>
+  <a class="cb-back" href="../">All work</a>
+</div>
+
+<header class="nav">
+  <div class="logo">FORME</div>
+  <a href="#visit">Santa Monica</a>
+</header>
+<section class="hero" style="padding:0">
+  <img src="../assets/img/fit-hero.jpg" alt="A training floor in hard light, racks and a long room">
+  <div class="hero-inner">
+    <h1>TRAIN WITH <span>INTENTION.</span></h1>
+    <p>A small Santa Monica studio for people who would rather be strong than distracted. Coaching, a short class board, and a floor that stays uncrowded on purpose.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <p style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#e25c2a;margin-bottom:8px">The board</p>
+    <h2>A week on the floor.</h2>
+    <div class="board">
+      <div class="cls"><div class="when">Mon · Wed · Fri  ·  6:30</div><h3>Strength</h3><p>Barbell work, coached, in a room that holds a dozen people and no more.</p></div>
+      <div class="cls"><div class="when">Tue · Thu  ·  7:00</div><h3>Condition</h3><p>Engines, not entertainment. Short sessions, honest numbers.</p></div>
+      <div class="cls"><div class="when">Saturday  ·  9:00</div><h3>Long work</h3><p>A slower morning for mixed efforts and the kind of sweat that lasts.</p></div>
+      <div class="cls"><div class="when">By arrangement</div><h3>Private</h3><p>One coach, one athlete, a program written for the body in front of us.</p></div>
+      <div class="cls"><div class="when">Daily  ·  open floor</div><h3>Own work</h3><p>Members who already know their session, and want the room to do it in.</p></div>
+      <div class="cls"><div class="when">Sunday</div><h3>Closed</h3><p>The floor rests. So should you.</p></div>
+    </div>
+  </div>
+</section>
+<div class="pair">
+  <img src="../assets/img/fit-weights.jpg" alt="A barbell mid-lift, chalk in the air">
+  <img src="../assets/img/fit-studio.jpg" alt="An open training studio in daylight">
+</div>
+<section class="cta" id="visit">
+  <p style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#e25c2a">Training by arrangement</p>
+  <h2>Come in for a first session.</h2>
+  <p>Forme is a Brightverse concept — a finished studio website, not a gym that can take memberships from this page.</p>
+</section>
+<footer>
+  <span>Forme Studio · Santa Monica, CA</span>
+  <span>Concept design by Brightverse · brightverse.ai</span>
+</footer>
+
+</body>
+</html>

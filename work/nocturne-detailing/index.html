@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="description" content="Concept website for a fictional Los Angeles auto-detailing studio.">
+<title>Nocturne Detailing — Concept design by Brightverse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+button,input,textarea{font:inherit}
+.concept-bar{position:relative;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 28px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;flex-wrap:wrap}
+.concept-bar.light{background:#111;color:#f3efe6}
+.concept-bar.dark{background:#f3efe6;color:#111}
+.concept-bar a{text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px}
+.concept-bar a:hover{opacity:.7}
+.cb-note{opacity:.72;letter-spacing:.08em;text-transform:none;font-size:12px}
+@media (max-width:720px){
+  .cb-note{display:none}
+  .concept-bar{padding:10px 16px}
+}
+
+:root{--bg:#090909;--ink:#f4f4f0;--dim:#a3a39b}
+body{font-family:"DM Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;position:absolute;left:0;right:0;top:42px;z-index:5;mix-blend-mode:difference}
+.logo{font-family:Syne,sans-serif;font-weight:800;letter-spacing:-.05em;font-size:18px}
+.nav nav{display:flex;gap:22px;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.nav nav a{text-decoration:none}
+.hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.72) contrast(1.08)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,9,9,.72),rgba(9,9,9,.15) 55%,rgba(9,9,9,.5))}
+.hero-inner{position:relative;z-index:2;padding:28vh 48px 80px;max-width:900px}
+.kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#cfcfc7}
+h1{font-family:Syne,sans-serif;font-weight:800;font-size:clamp(48px,8vw,96px);line-height:.9;letter-spacing:-.06em;margin:12px 0 18px}
+.hero-inner p{font-size:18px;max-width:32ch;color:#deded6}
+.words{padding:40px 48px 20px}
+.words ul{list-style:none}
+.words li{font-family:Syne,sans-serif;font-weight:800;font-size:clamp(40px,8vw,100px);letter-spacing:-.06em;line-height:.92;border-top:1px solid #222;padding:10px 0;display:flex;justify-content:space-between;align-items:baseline;gap:20px}
+.words li span{font-family:"DM Sans",sans-serif;font-weight:400;font-size:14px;letter-spacing:0;color:var(--dim);max-width:28ch;line-height:1.4}
+.pair{display:grid;grid-template-columns:1.2fr .8fr;gap:0}
+.pair img{width:100%;height:100%;min-height:520px;object-fit:cover}
+.pair .copy{padding:80px 48px;display:flex;flex-direction:column;justify-content:center;background:#111}
+.pair h2{font-family:Syne,sans-serif;font-size:clamp(32px,4vw,52px);letter-spacing:-.05em;line-height:1}
+.pair p{margin-top:16px;color:var(--dim);max-width:36ch}
+.cta{padding:120px 48px;text-align:left}
+.cta h2{font-family:Syne,sans-serif;font-size:clamp(36px,5vw,64px);letter-spacing:-.05em}
+footer{padding:24px 48px 48px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#6f6f68;border-top:1px solid #1c1c1c}
+@media (max-width:800px){
+  .nav,.hero-inner,.words,.cta,footer,.pair .copy{padding-left:20px;padding-right:20px}
+  .pair{grid-template-columns:1fr}
+  .words li{flex-direction:column;font-size:42px}
+  .nav nav{display:none}
+}
+
+</style>
+</head>
+<body>
+<div class="concept-bar light">
+  <span class="cb-kicker">Concept design</span>
+  <span class="cb-note">A Brightverse study — fictional business, not a live client site</span>
+  <a class="cb-back" href="../">All work</a>
+</div>
+
+<header class="nav">
+  <div class="logo">NOCTURNE</div>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#visit">Los Angeles</a>
+  </nav>
+</header>
+<section class="hero" style="padding:0">
+  <img src="../assets/img/auto-night.jpg" alt="A dark sports car on a wet road at night">
+  <div class="hero-inner">
+    <p class="kicker">Los Angeles · Studio</p>
+    <h1>The car, as it was meant to be seen.</h1>
+    <p>Paint correction, ceramic, and interior work — done at night, under lights that tell the truth about the surface.</p>
+  </div>
+</section>
+<section class="words" id="work" style="padding-top:20px">
+  <ul>
+    <li>CORRECTION <span>Machine work that levels the clear, not a cover of wax over the swirl.</span></li>
+    <li>CERAMIC <span>A coat that holds the gloss through a season of dust and canyon miles.</span></li>
+    <li>INTERIOR <span>Leather, alcantara, and the quiet corners a hurried wash never reaches.</span></li>
+    <li>FILM <span>Paint protection, cut and set so the panel still looks like a panel.</span></li>
+  </ul>
+</section>
+<div class="pair">
+  <img src="../assets/img/auto-black.jpg" alt="A red coupe, the paint finished to a deep gloss">
+  <div class="copy">
+    <p class="kicker">The studio</p>
+    <h2>One car on the floor. The rest of the night for that car.</h2>
+    <p>Nocturne is imagined as a Los Angeles detailing studio that takes fewer bookings on purpose. This is a Brightverse concept, not a shop you can schedule.</p>
+  </div>
+</div>
+<section class="cta" id="visit">
+  <p class="kicker">By arrangement</p>
+  <h2>Bring the car after dark.</h2>
+  <p style="color:#a3a39b;margin-top:16px;max-width:36ch">A live site would hold a short request form. This page does not take bookings.</p>
+</section>
+<footer>
+  <span>Nocturne Detailing · Los Angeles</span>
+  <span>Concept design by Brightverse · brightverse.ai</span>
+</footer>
+
+</body>
+</html>
